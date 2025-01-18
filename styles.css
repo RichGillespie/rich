@@ -9,7 +9,7 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: ##43a858;
+    background-color: #43a858;
 }
 
 h1 {
@@ -40,7 +40,7 @@ main {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: ##4988f1;
+    background-color: #41bf45;
     position: absolute;
     width: 100%;
     bottom: 0;
