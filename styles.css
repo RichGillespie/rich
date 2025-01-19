@@ -3,11 +3,12 @@
     --bg-color: #1a1a1a; /* Darker background for a richer contrast */
     --primary-color: #222; /* Slightly darker shade for contrast */
     --secondary-color: #333;
-    --accent-color: #ff00ff; /* Neon pink for links */
-    --hover-color: #00ffff; /* Neon cyan for hover effects */
+    --accent-color: #00bcd4; /* Neon dark baby blue for links */
+    --hover-color: #80e0e6; /* Light baby blue for hover effects */
     --text-color: #e0e0e0; /* Light grey for text */
     --muted-text-color: #bbb;
     --logo-font: 'Orbitron', sans-serif; /* Retro futuristic font for logo */
+    --cursive-font: 'Dancing Script', cursive; /* Cursive-like font for "Listen to my music" */
     --body-font: 'Roboto', sans-serif; /* Cleaner font for readability */
     --base-font-size: 16px; /* Base font size for rem calculation */
 }
@@ -46,9 +47,9 @@ header {
 header h1 {
     font-family: var(--logo-font);
     font-size: 5rem; /* Larger size for the logo */
-    color: #ff00ff; /* Neon pink for a cooler, more eye-catching logo */
+    color: #00bcd4; /* Neon dark baby blue for the logo */
     margin-bottom: 1rem;
-    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; /* Neon glow effect */
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4; /* Neon glow effect */
 }
 
 header .tagline {
@@ -73,7 +74,7 @@ header .bio {
 #music h2 {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: #ff00ff; /* Matching the neon pink theme */
+    color: #00bcd4; /* Neon dark baby blue for the heading */
 }
 
 .music-links {
@@ -88,7 +89,7 @@ header .bio {
     padding: 1rem 2rem;
     font-size: 1.5rem;
     color: var(--text-color);
-    background-color: #ff00ff;
+    background-color: #00bcd4; /* Neon dark baby blue */
     text-decoration: none;
     border-radius: 1rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -97,10 +98,20 @@ header .bio {
 }
 
 .music-links .platform:hover {
-    background-color: #00ffff; /* Neon cyan on hover */
+    background-color: #80e0e6; /* Light cyan for hover effect */
     transform: scale(1.1); /* Slightly increase size on hover for effect */
 }
 
+/* Custom Styling for "Listen to my music" */
+#listen-to-music {
+    font-family: var(--cursive-font);
+    font-size: 2.5rem;
+    color: #00bcd4; /* Neon dark baby blue */
+    margin-top: 2rem;
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4; /* Neon glow effect */
+}
+
+/* Footer */
 footer {
     background: rgba(0, 0, 0, 0.7);
     padding: 2rem 0;
@@ -125,5 +136,9 @@ footer p {
     .music-links .platform {
         font-size: 1.25rem;
         padding: 0.75rem 1.5rem;
+    }
+
+    #listen-to-music {
+        font-size: 2rem;
     }
 }
