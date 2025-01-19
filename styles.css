@@ -1,15 +1,15 @@
 /* Define root color scheme */
 :root {
-    --bg-color: #2d2d2d; /* Slightly lighter background than black */
-    --primary-color: #222; 
+    --bg-color: #2c3e50; /* Dark slate blue for the background */
+    --primary-color: #222;
     --secondary-color: #333;
-    --accent-color: #00b8d4; /* Darker neon blue */
-    --hover-color: #80e0e6; /* Lighter hover effect */
-    --text-color: #e0e0e0; 
+    --accent-color: #0077cc; /* Dark blue for neon */
+    --hover-color: #80e0e6; /* Light cyan for hover effects */
+    --text-color: #e0e0e0;
     --muted-text-color: #bbb;
-    --logo-font: 'Orbitron', sans-serif; 
-    --cursive-font: 'Great Vibes', cursive; /* Elegant cursive font */
-    --body-font: 'Roboto', sans-serif; 
+    --logo-font: 'Orbitron', sans-serif;
+    --cursive-font: 'Dancing Script', cursive;
+    --body-font: 'Roboto', sans-serif;
     --base-font-size: 16px;
 }
 
@@ -26,7 +26,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     font-size: 1rem;
-    background-image: url('https://www.pexels.com/photo/abstract-light-beams-on-black-background-1034649/');
+    background-image: url('https://www.pexels.com/photo/black-and-white-space-illustration-1758973/');
     background-size: cover;
     background-position: center;
 }
@@ -64,6 +64,13 @@ header .bio {
     margin-top: 1.25rem;
 }
 
+header .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
 /* Music Section */
 #music {
     background: rgba(0, 0, 0, 0.7);
@@ -75,11 +82,6 @@ header .bio {
     font-size: 3rem;
     margin-bottom: 2rem;
     color: var(--accent-color);
-}
-
-.soundcloud-embeds iframe {
-    margin-bottom: 2rem;
-    border-radius: 10px;
 }
 
 .music-links {
@@ -107,13 +109,20 @@ header .bio {
     transform: scale(1.1);
 }
 
-/* Custom Styling for "Listen to my music" */
-#listen-to-music {
-    font-family: var(--cursive-font);
-    font-size: 3rem;
-    color: var(--accent-color);
-    margin-top: 2rem;
-    text-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color);
+/* SoundCloud Embed Section */
+.soundcloud-embeds iframe {
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.soundcloud-embeds div {
+    color: var(--muted-text-color);
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.video-container iframe {
+    border: none;
 }
 
 /* Footer */
@@ -128,7 +137,26 @@ footer p {
     color: var(--muted-text-color);
 }
 
-/* Responsive Design for smaller screens */
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+footer .footer-links a {
+    color: var(--muted-text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
     header h1 {
         font-size: 3rem;
@@ -145,5 +173,4 @@ footer p {
 
     #listen-to-music {
         font-size: 2rem;
-    }
-}
+   
