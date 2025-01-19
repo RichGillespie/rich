@@ -1,16 +1,16 @@
 /* Define root color scheme */
 :root {
-    --bg-color: #1a1a1a; /* Darker background for a richer contrast */
-    --primary-color: #222; /* Slightly darker shade for contrast */
+    --bg-color: #2d2d2d; /* Slightly lighter background than black */
+    --primary-color: #222; 
     --secondary-color: #333;
-    --accent-color: #00bcd4; /* Neon dark baby blue for links */
-    --hover-color: #80e0e6; /* Light baby blue for hover effects */
-    --text-color: #e0e0e0; /* Light grey for text */
+    --accent-color: #00b8d4; /* Darker neon blue */
+    --hover-color: #80e0e6; /* Lighter hover effect */
+    --text-color: #e0e0e0; 
     --muted-text-color: #bbb;
-    --logo-font: 'Orbitron', sans-serif; /* Retro futuristic font for logo */
-    --cursive-font: 'Dancing Script', cursive; /* Cursive-like font for "Listen to my music" */
-    --body-font: 'Roboto', sans-serif; /* Cleaner font for readability */
-    --base-font-size: 16px; /* Base font size for rem calculation */
+    --logo-font: 'Orbitron', sans-serif; 
+    --cursive-font: 'Great Vibes', cursive; /* Elegant cursive font */
+    --body-font: 'Roboto', sans-serif; 
+    --base-font-size: 16px;
 }
 
 /* Universal Reset */
@@ -26,7 +26,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     font-size: 1rem;
-    background-image: url('https://www.pexels.com/photo/black-and-white-space-illustration-1758973/'); /* Space/abstract background */
+    background-image: url('https://www.pexels.com/photo/abstract-light-beams-on-black-background-1034649/');
     background-size: cover;
     background-position: center;
 }
@@ -39,17 +39,17 @@ body {
 
 /* Header with futuristic logo and music */
 header {
-    background: rgba(0, 0, 0, 0.6); /* Transparent black for better visibility */
-    padding: 5rem 0; /* Adjusted padding for better space around the logo */
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5rem 0;
     text-align: center;
 }
 
 header h1 {
     font-family: var(--logo-font);
-    font-size: 5rem; /* Larger size for the logo */
-    color: #00bcd4; /* Neon dark baby blue for the logo */
+    font-size: 5rem;
+    color: var(--accent-color);
     margin-bottom: 1rem;
-    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4; /* Neon glow effect */
+    text-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color);
 }
 
 header .tagline {
@@ -66,7 +66,7 @@ header .bio {
 
 /* Music Section */
 #music {
-    background: rgba(0, 0, 0, 0.7); /* Darkened background for contrast */
+    background: rgba(0, 0, 0, 0.7);
     padding: 4rem 0;
     text-align: center;
 }
@@ -74,7 +74,12 @@ header .bio {
 #music h2 {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: #00bcd4; /* Neon dark baby blue for the heading */
+    color: var(--accent-color);
+}
+
+.soundcloud-embeds iframe {
+    margin-bottom: 2rem;
+    border-radius: 10px;
 }
 
 .music-links {
@@ -89,7 +94,7 @@ header .bio {
     padding: 1rem 2rem;
     font-size: 1.5rem;
     color: var(--text-color);
-    background-color: #00bcd4; /* Neon dark baby blue */
+    background-color: var(--accent-color);
     text-decoration: none;
     border-radius: 1rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -98,17 +103,17 @@ header .bio {
 }
 
 .music-links .platform:hover {
-    background-color: #80e0e6; /* Light cyan for hover effect */
-    transform: scale(1.1); /* Slightly increase size on hover for effect */
+    background-color: var(--hover-color);
+    transform: scale(1.1);
 }
 
 /* Custom Styling for "Listen to my music" */
 #listen-to-music {
     font-family: var(--cursive-font);
-    font-size: 2.5rem;
-    color: #00bcd4; /* Neon dark baby blue */
+    font-size: 3rem;
+    color: var(--accent-color);
     margin-top: 2rem;
-    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4; /* Neon glow effect */
+    text-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color);
 }
 
 /* Footer */
