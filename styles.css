@@ -1,47 +1,92 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #41bfb8;
-    color: black;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background: #0d0d0d;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-    text-align: center;
-    padding: 20px;
-    background-color: #43a858;
+  background: linear-gradient(45deg, #1a1a1a, #333);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
-h1 {
-    font-size: 2rem;
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
 }
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
+header nav ul {
+  list-style: none;
+  display: flex;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+header nav ul li {
+  margin-left: 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: black;
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
+header nav ul li a:hover {
+  color: #0ff;
 }
 
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #0a0a0a, #222);
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Content Section */
+.content {
+  padding: 2rem;
+  background: #1a1a1a;
+  border-top: 2px solid #333;
+}
+
+.content h2 {
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff;
+}
+
+.content p {
+  margin-top: 10px;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #177320;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+  text-align: center;
+  padding: 1rem 2rem;
+  background: #111;
+  color: #555;
+  font-size: 0.9rem;
 }
