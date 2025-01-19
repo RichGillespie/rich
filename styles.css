@@ -1,141 +1,72 @@
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: #00b5e2;
-}
-
-h1, h2 {
-    text-align: center;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header */
-header {
-    background: linear-gradient(45deg, #111, #333);
-    color: #00b5e2;
-    padding: 40px 0;
-    text-align: center; /* Centering the content */
-}
-
-header h1 {
-    font-family: 'Pacifico', cursive, sans-serif; /* Change the font to something logo-like */
-    font-size: 4.5em; /* Larger font size for the name */
-    font-weight: bold; /* Bold for a logo effect */
-    letter-spacing: 2px; /* Add spacing between letters for a modern look */
-    text-transform: uppercase; /* Makes the text more futuristic */
-    margin-bottom: 0; /* No space below the name */
-}
-
-header .tagline {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-header .bio {
-    font-size: 1.2em;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
-    margin-top: 20px;
 }
 
-header img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-/* Music Section */
-#music {
-    padding: 40px 0;
-    background-color: #222;
-}
-
-#music h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.music-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.music-links a {
-    background-color: #00b5e2;
-    padding: 15px 30px; /* Increased padding to make the buttons bigger */
-    margin: 10px;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2em; /* Increase font size */
-    transition: background-color 0.3s ease;
-}
-
-.music-links a:hover {
-    background-color: #009ac1;
-}
-
-.soundcloud-embeds iframe {
-    width: 100%;
-    max-width: 250px; /* Slightly increase the iframe size */
-    height: 250px; /* Adjust the height as needed */
-    margin: 10px;
-}
-
-.soundcloud-embeds {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.soundcloud-embeds iframe {
-    border: none; /* Removes any border from the iframe */
-}
-
-/* Video Section */
-.video-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-iframe {
-    border: 0;
-    max-width: 100%;
-}
-
-/* Footer */
-footer {
-    background-color: #111;
-    color: white;
-    padding: 20px;
-}
-
-footer .footer-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-footer .footer-links a {
-    margin: 0 15px;
-    font-size: 1.2em;
-}
-
-footer p {
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    margin-top: 20px;
+}
+
+.name {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Content Section */
+.content {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* SoundCloud Embed Section */
+.soundcloud-embeds {
+    margin-bottom: 30px;
+}
+
+.soundcloud-player {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.track-text {
+    font-size: 14px;
+    color: #444;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* YouTube Embed Section */
+.youtube-embed {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.youtube-embed iframe {
+    max-width: 100%;
+    height: 315px;
 }
