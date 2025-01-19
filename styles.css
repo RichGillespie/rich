@@ -1,3 +1,18 @@
+/* Define root color scheme */
+:root {
+    --bg-color: #1a1a1a; /* Darker background for a richer contrast */
+    --primary-color: #222; /* Slightly darker shade for contrast */
+    --secondary-color: #333;
+    --accent-color: #ff00ff; /* Neon pink for links */
+    --hover-color: #00ffff; /* Neon cyan for hover effects */
+    --text-color: #e0e0e0; /* Light grey for text */
+    --muted-text-color: #bbb;
+    --logo-font: 'Orbitron', sans-serif; /* Retro futuristic font for logo */
+    --body-font: 'Roboto', sans-serif; /* Cleaner font for readability */
+    --base-font-size: 16px; /* Base font size for rem calculation */
+}
+
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,77 +20,110 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: #fff;
+    font-family: var(--body-font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
+    font-size: 1rem;
+    background-image: url('https://www.pexels.com/photo/black-and-white-space-illustration-1758973/'); /* Space/abstract background */
+    background-size: cover;
+    background-position: center;
 }
 
+/* Container to center content */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
+/* Header with futuristic logo and music */
 header {
-    background: #333;
-    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.6); /* Transparent black for better visibility */
+    padding: 5rem 0; /* Adjusted padding for better space around the logo */
     text-align: center;
 }
 
 header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-family: var(--logo-font);
+    font-size: 5rem; /* Larger size for the logo */
+    color: #ff00ff; /* Neon pink for a cooler, more eye-catching logo */
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; /* Neon glow effect */
 }
 
 header .tagline {
-    font-size: 1.5em;
-    color: #ccc;
+    font-size: 2rem;
+    color: var(--muted-text-color);
+    margin-bottom: 1rem;
 }
 
 header .bio {
-    font-size: 1.1em;
-    margin-top: 20px;
+    font-size: 1.25rem;
+    color: var(--text-color);
+    margin-top: 1.25rem;
 }
 
+/* Music Section */
 #music {
-    background: #444;
-    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.7); /* Darkened background for contrast */
+    padding: 4rem 0;
     text-align: center;
 }
 
 #music h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #ff00ff; /* Matching the neon pink theme */
 }
 
 .music-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .music-links .platform {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: #1db954;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    background-color: #ff00ff;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .music-links .platform:hover {
-    background-color: #1ed760;
+    background-color: #00ffff; /* Neon cyan on hover */
+    transform: scale(1.1); /* Slightly increase size on hover for effect */
 }
 
 footer {
-    background: #333;
-    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem 0;
     text-align: center;
 }
 
 footer p {
-    font-size: 1em;
-    color: #ccc;
+    font-size: 1rem;
+    color: var(--muted-text-color);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .music-links .platform {
+        font-size: 1.25rem;
+        padding: 0.75rem 1.5rem;
+    }
 }
